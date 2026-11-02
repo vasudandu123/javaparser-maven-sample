@@ -8,7 +8,7 @@ pipeline {
 
   parameters {
     string(name: 'BRANCH_NAME', defaultValue: 'main', description: 'the branch name to checkout')
-    choice(name: 'BUILD_ENV', choices: ['dev', 'staging', ''prod], description: 'The target environment')
+    choice(name: 'BUILD_ENV', choices: ['dev', 'staging', 'prod'], description: 'The target environment')
   }
 
             //part 2
