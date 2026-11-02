@@ -4,6 +4,7 @@ pipeline {
    options {
     timeout(time: 30, unit: 'MINUTES')
             timestamps()
+   }
 
   parameters {
     string(name: 'BRANCH_NAME', defaultValue: 'main', description: 'the branch name to checkout')
