@@ -1,8 +1,7 @@
 pipeline {
   //Part 1
   agent any 
-
-  options {
+   options {
     timeout(time: 30, unit: 'MINUTES')
             timestamps()
 
