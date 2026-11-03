@@ -1,4 +1,4 @@
-pipeline {
+ pipeline {
     agent { label 'test1' }
     environment {
         M2_HOME = '/usr/local/maven'           // for maven build
