@@ -29,7 +29,7 @@ stage('Code Coverage')
 			{
 			    /*when {
 			        allOf {
-			            expression { return params.CODEANALYSIS }
+			            expression { return params.CODEANALYSIS == yes }
 			            environment name: 'BUILDME', value: 'yes'
 			        }
 			    } */
