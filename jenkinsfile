@@ -8,6 +8,7 @@ parameters {
         M2_HOME = '/usr/local/maven'           // for maven build
         PATH = "${env.M2_HOME}/bin:${env.PATH}"   // for maven build
     }
+}
     stages {
         /* stage('Checkout') {               //when using pipeline script inside jenkins
             steps {
@@ -33,7 +34,7 @@ stage('Code Coverage')
 			{
 			    /*when {
 			        allOf {
-			            expression { return params.CODEANALYSIS == yes }
+			            expression { return params.CODEANALYSIS }
 			            environment name: 'BUILDME', value: 'yes'
 			        }
 			    } */
