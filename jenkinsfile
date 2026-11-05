@@ -28,7 +28,7 @@ pipeline {
         stage('Code Coverage') {
             steps {
                 echo "Running Code Coverage..."
-                sh "sh "mvn org.jacoco:jacoco-maven-plugin:prepare-agent""
+                sh "mvn org.jacoco:jacoco-maven-plugin:prepare-agent""
             }
         }
     }
